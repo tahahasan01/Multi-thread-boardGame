@@ -1,102 +1,125 @@
-🕹️ Multi-Threading Game
-A multiplayer item collection game built in C++ using SDL2 for graphics and audio. This project demonstrates multi-threading using POSIX threads (pthreads) and inter-process communication to handle player inputs and real-time game updates.
+# 🕹️ Multi-Threading Game
 
-📑 Table of Contents
-Features
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
+[![C++](https://img.shields.io/badge/language-C++-blue)]()
+[![SDL2](https://img.shields.io/badge/graphics-SDL2-red)]()
 
-Requirements
+> A multiplayer item collection game built in **C++** using **SDL2** for graphics and audio.  
+> Demonstrates real-time **multi-threading** with **POSIX threads** and basic inter-process communication.
 
-Installation
+---
 
-Usage
+## 📑 Table of Contents
 
-Game Controls
+- [Features](#-features)  
+- [Requirements](#-requirements)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Game Controls](#-game-controls)  
+- [Game Rules](#-game-rules)  
+- [Contributing](#-contributing)  
+- [License](#-license)
 
-Game Rules
+---
 
-Contributing
+## 🚀 Features
 
-License
+- 🎮 **Multiplayer Support** – Two players can play simultaneously.
+- 🖼️ **Graphics & Audio** – Powered by **SDL2**.
+- 🔀 **Multi-threading** – Player inputs handled using **POSIX threads**.
+- 📏 **Dynamic Game Board** – Random board size per game.
+- 🎯 **Item Collection** – Players score by collecting items.
 
-🚀 Features
-🎮 Multiplayer Support: Two players can play simultaneously.
+---
 
-🖼️ Graphics & Audio: Uses SDL2 for rendering and sound.
+## 🧰 Requirements
 
-🔀 Multi-threading: Player inputs handled using POSIX threads.
+- **C++ Compiler** (`g++`, `clang++`, etc.)
+- **SDL2 Library**
+- **POSIX Threads** (`pthread`)
 
-🔄 Dynamic Game Board: Board size is randomly generated at game start.
+---
 
-🎯 Item Collection: Players collect items to score points.
+## 🛠️ Installation
 
-🧰 Requirements
-C++ Compiler (e.g., g++)
+### 1. Clone the Repository
 
-SDL2 Library
-
-POSIX Threads (pthread)
-
-🛠️ Installation
-1. Clone the Repository
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/tahahasan01/Multi-Threading-Game.git
 cd Multi-Threading-Game
-2. Install SDL2
-macOS
-bash
-Copy
-Edit
+```
+
+### 2. Install SDL2
+
+#### macOS
+
+```bash
 brew install sdl2
-Linux
-bash
-Copy
-Edit
+```
+
+#### Linux
+
+```bash
 sudo apt-get install libsdl2-dev
-Windows
-Download and install SDL2 from the official site: https://www.libsdl.org/download-2.0.php
+```
 
-⚙️ Compilation
-Compile the game using:
+#### Windows
 
-bash
-Copy
-Edit
+Download and install SDL2 from:  
+➡️ [https://www.libsdl.org/download-2.0.php](https://www.libsdl.org/download-2.0.php)
+
+---
+
+## ⚙️ Compile the Game
+
+```bash
 g++ -o game game.cpp -lpthread -lSDL2
-▶️ Usage
-Run the game:
+```
 
-bash
-Copy
-Edit
+---
+
+## ▶️ Run the Game
+
+```bash
 ./game
-🎮 Game Controls
-Player 1:
-W - Up
-A - Left
-S - Down
-D - Right
+```
 
-Player 2:
-↑ - Up
-← - Left
-↓ - Down
-→ - Right
+---
 
-🏁 Game Rules
-The objective is to collect as many items as possible.
+## 🎮 Game Controls
 
-Each item collected increases a player's score.
+### Player 1
+- `W` – Move Up  
+- `A` – Move Left  
+- `S` – Move Down  
+- `D` – Move Right
 
-The game ends when all items are collected.
+### Player 2
+- `↑` – Move Up  
+- `←` – Move Left  
+- `↓` – Move Down  
+- `→` – Move Right
 
-The player with the highest score wins.
+---
 
-🤝 Contributing
-Contributions are welcome!
-Please fork the repository and submit a pull request for any improvements or bug fixes.
+## 🏁 Game Rules
 
-📄 License
-This project is licensed under the MIT License.
-See the LICENSE file for details
+- Collect as many items as possible.
+- Each item increases the player’s score.
+- Game ends when all items are collected.
+- Player with the highest score **wins**.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Please fork the repository and submit a **pull request** for any improvements or bug fixes.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
